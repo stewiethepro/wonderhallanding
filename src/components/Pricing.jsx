@@ -121,7 +121,7 @@ export function Pricing() {
             description="One plan to rule them all."
             href="/register"
             features={[
-              'Includes 50,000 words / month, then $0.0004 / word',
+              '50,000 words / month included, then $0.0004 / word',
               'Up to 5 team members',
               'Access to full template library',
             ]}
