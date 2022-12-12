@@ -17,7 +17,7 @@ export default function Home() {
         <title>WonderHal - Idea to content in 30 seconds</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Revolutionize your content creation process and breathe new life into your brand with AI-powered content generation."
         />
       </Head>
       <Header />
