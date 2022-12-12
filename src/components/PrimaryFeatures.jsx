@@ -4,36 +4,38 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
+import backgroundImage from '@/images/background-features-teal-2.jpg'
 import screenshotExpenses from '@/images/screenshots/expenses.png'
 import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
+import screenshotBlogContent from '@/images/screenshots/blog.png'
+
 const features = [
   {
-    title: 'Payroll',
+    title: 'Blog content',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      "Write blog posts in a fraction of the time.",
+    image: screenshotBlogContent,
   },
   {
-    title: 'Claim expenses',
+    title: 'Sales copy',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "Convert your audience with copy that sells.",
+    image: screenshotBlogContent,
   },
   {
-    title: 'VAT handling',
+    title: 'Digital ad copy',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      "Produce compelling ad copy in just a few clicks.",
+    image: screenshotBlogContent,
   },
   {
-    title: 'Reporting',
+    title: 'Social media content',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      'Engage your audience with absorbing content.',
+    image: screenshotBlogContent,
   },
 ]
 
@@ -72,11 +74,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+          Write better content faster
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+          Leverage AI to speed up your workflow and write your content in minutes not hours.
           </p>
         </div>
         <Tab.Group
@@ -134,7 +135,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
                         src={feature.image}

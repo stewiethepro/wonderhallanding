@@ -25,7 +25,7 @@ export default function Register() {
               Already registered?{' '}
               <Link
                 href="/login"
-                className="font-medium text-blue-600 hover:underline"
+                className="font-medium text-teal-600 hover:underline"
               >
                 Sign in
               </Link>{' '}
@@ -71,7 +71,7 @@ export default function Register() {
             autoComplete="new-password"
             required
           />
-          <SelectField
+          {/* <SelectField
             className="col-span-full"
             label="How did you hear about us?"
             id="referral_source"
@@ -81,7 +81,7 @@ export default function Register() {
             <option>Super Bowl commercial</option>
             <option>Our route 34 city bus ad</option>
             <option>The “Never Use This” podcast</option>
-          </SelectField>
+          </SelectField> */}
           <div className="col-span-full">
             <Button
               type="submit"

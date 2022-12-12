@@ -8,13 +8,15 @@ import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
 import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
+import screenshotTemplates from '@/images/screenshots/templates.png'
+
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: '1. Create',
+    summary: 'Define the type of content',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
-    image: screenshotProfitLoss,
+      'Choose from emails, social posts, long-form blog posts, and more.',
+    image: screenshotTemplates,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -44,12 +46,12 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: '2. Outline',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'Provide some context',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
-    image: screenshotInventory,
+      "Fine-tune WonderHal with subject matter, intended audience, tone, style, and more.",
+    image: screenshotTemplates,
     icon: function InventoryIcon() {
       return (
         <>
@@ -72,12 +74,12 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: '3. Generate, Review and Publish',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Work on your AI-generated content',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
-    image: screenshotContacts,
+      "WonderHal returns copy for you to work on in our editor. Then, just copy and paste the work to publish.",
+    image: screenshotTemplates,
     icon: function ContactsIcon() {
       return (
         <>
@@ -105,7 +107,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500'
+          isActive ? 'bg-teal-500' : 'bg-slate-500'
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -115,7 +117,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600'
+          isActive ? 'text-teal-500' : 'text-slate-600'
         )}
       >
         {feature.name}
@@ -216,12 +218,8 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            How it works
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
-          </p>
         </div>
         <FeaturesMobile />
         <FeaturesDesktop />
