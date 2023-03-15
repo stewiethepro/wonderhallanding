@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features-teal-2.jpg'
+import backgroundImage from '@/images/background-features-teal.jpg'
 
 export function CallToAction() {
   return (
