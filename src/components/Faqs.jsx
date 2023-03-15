@@ -33,18 +33,13 @@ const faqs = [
       'We recommend that you use WonderHal as a tool to enhance your creativity and productivity. AI is an incredible tool, but it is best used side-by-side with a human touch to guide it.',
     },
     {
-      question: 'Where is WonderHal based?',
-      answer:
-        'WonderHal is based in beautiful New Zealand down in the South Pacific!',
-    },
-  ],
-  [
-    {
       question:
         'Can I get a demo?',
       answer:
         "Definitely, just get in touch with the WonderHal team and we'll show you around the product!",
     },
+  ],
+  [
     {
       question: 'Do you offer custom pricing for large teams?',
       answer: 'We offer bespoke engagements for teams above 5 users, please get in touch with our team to discuss further.',
